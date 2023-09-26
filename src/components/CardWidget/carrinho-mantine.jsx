@@ -1,8 +1,11 @@
 
-import React from 'react';
+import React, {useState} from 'react';
 import { Popover, Text, Button } from '@mantine/core';
 
 export default function CarrinhoMantine() {
+
+
+    
     return (
         <Popover width={200} position="bottom" withArrow shadow="md">
             <Popover.Target>
