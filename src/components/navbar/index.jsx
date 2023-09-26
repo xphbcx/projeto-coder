@@ -1,38 +1,45 @@
 import React from 'react'
-import DropDown from '../ItemListContainer'
 import Carrinho from '../CardWidget/carrinho'
-import { useDisclosure } from '@mantine/hooks';
-import { Drawer, Button } from '@mantine/core';
+import CarrinhoMantine from '../CardWidget/carrinho-mantine'
+import altstore from '../../assets/altstore.png'
+import { useState } from 'react';
+import { Popover, Button } from '@mantine/core';
 
 
 export default function NavBar() {
 
-    function Demo() {
-        const [opened, { open, close }] = useDisclosure(false);
-      
+
+    function Car() {
+        const [opened, setOpened] = useState(false);
         return (
-          <>
-            <Drawer opened={opened} onClose={close} title="Authentication">
-              <h1>TESTE</h1>
-            </Drawer>
-      
-            <Button onClick={open}>Open Drawer</Button>
-          </>
+            <Popover opened={opened} onChange={setOpened}>
+                <Popover.Target>
+                    <Button onClick={() => setOpened((o) => !o)}>Toggle popover</Button>
+                </Popover.Target>
+
+                <Popover.Dropdown>Dropdown</Popover.Dropdown>
+            </Popover>
         );
-      }
+    }
+
     return (
         <div className="navbar">
-            <div className="logo">AltStore</div>
-            <DropDown></DropDown>
+            <img src={altstore} width={150} style={{ borderRadius: 5 }} />
+
             <div className="links">
                 <a href="#">Notebooks</a>
                 <a href="#">Telefonia</a>
                 <a href="#">Acessórios</a>
             </div>
             <div className="buttons">
-                <button>Login</button>
+
+                <Car></Car>
+
+                {/* Componente feito com a lib Mantine */}
+                <CarrinhoMantine></CarrinhoMantine>
+
+                {/* Componente feito com useState */}
                 <Carrinho></Carrinho>
-                <Demo></Demo>
             </div>
         </div>
 
