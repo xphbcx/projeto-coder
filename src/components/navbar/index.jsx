@@ -1,6 +1,6 @@
 import React from 'react'
-import Carrinho from '../CardWidget/carrinho'
-import CarrinhoMantine from '../CardWidget/carrinho-mantine'
+import Carrinho from '../CardWidget/Carrinho'
+import CarrinhoMantine from '../CardWidget/CarrinhoMantine'
 import altstore from '../../assets/altstore.png'
 
 

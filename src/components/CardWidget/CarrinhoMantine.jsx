@@ -1,10 +1,15 @@
-
 import React, {useState} from 'react';
 import { Popover, Text, Button } from '@mantine/core';
+import ItensCarrinho from '../ItemListContainer/ItensCarrinho';
+import nitro5 from '../../assets/nitro5.png'
 
 export default function CarrinhoMantine() {
 
-
+   
+        const product = "Notebook Acer Nitro 5"
+        const price = "R$ 4000,00"
+        const imgProduct = '../../assets/nitro5.png'
+    
     
     return (
         <Popover width={200} position="bottom" withArrow shadow="md">
@@ -32,7 +37,8 @@ export default function CarrinhoMantine() {
                     top: 90,
                     color: 'white'
                 }}>
-                <Text size="xs">Itens do Carrinho irão aparecer aqui</Text>
+                {/* <Text size="xs">Itens do Carrinho irão aparecer aqui</Text> */}
+                <ItensCarrinho product={product} price={price} imgProduct={imgProduct}/>
             </Popover.Dropdown>
         </Popover>
     );
