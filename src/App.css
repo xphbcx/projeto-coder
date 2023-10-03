@@ -95,3 +95,26 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 12;
 }
+
+.card-container{
+  display:flex;
+  justify-content: center;
+  margin-top: 60px;
+  align-items: center;
+  flex-direction: row;
+  width: 25%;
+  margin-left: 50px;
+  background-color: #60a5a2;
+  color:white;
+  border-radius: 10px;
+}
+
+.card-contador{
+  display: flex;
+  align-items: center;
+  /* border: 1px solid; */
+  /* border-color: black; */
+  margin-bottom: 5px;
+  background-color: white;
+  color:black;
+}

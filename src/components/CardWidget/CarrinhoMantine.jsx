@@ -38,7 +38,7 @@ export default function CarrinhoMantine() {
                     color: 'white'
                 }}>
                 {/* <Text size="xs">Itens do Carrinho irão aparecer aqui</Text> */}
-                <ItensCarrinho product={product} price={price} imgProduct={imgProduct}/>
+                <ItensCarrinho product={product} price={price} imgProduct={nitro5}/>
             </Popover.Dropdown>
         </Popover>
     );

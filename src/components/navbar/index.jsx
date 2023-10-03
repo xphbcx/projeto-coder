@@ -1,5 +1,5 @@
 import React from 'react'
-import Carrinho from '../CardWidget/Carrinho'
+import Carrinho from '../CardWidget/Item'
 import CarrinhoMantine from '../CardWidget/CarrinhoMantine'
 import altstore from '../../assets/altstore.png'
 
@@ -21,8 +21,6 @@ export default function NavBar() {
                 {/* Componente feito com a lib Mantine */}
                 <CarrinhoMantine></CarrinhoMantine>
 
-                {/* Componente feito com useState */}
-                <Carrinho></Carrinho>
             </div>
         </div>
 

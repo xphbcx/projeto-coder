@@ -1,5 +1,6 @@
-import NavBar from './components/navbar'
+import NavBar from './components/NavBar'
 import Contador from './components/CardWidget/Contador'
+import Item from './components/CardWidget/Item'
 import './App.css'
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
   return (
    <div>
       <NavBar />
-      <Contador />
+      <Item />
    </div>
   )
 }
