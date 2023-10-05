@@ -30,7 +30,7 @@ function Contador() {
 
     return (
 
-            <div className='card-item'>
+            <div style={{display:'flex',flexDirection:'column', alignItems:'center'}}>
                 <div className='card-contador'>
                     <Button onClick={Remove}>
                         -

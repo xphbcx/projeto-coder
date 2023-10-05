@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nome": "Acer Nitro 5",
+    "preco": 3999.99,
+    "url_imagem": "https://i.zst.com.br/thumbs/12/22/33/-838762770.jpg"
+  },
+  {
+    "id": 2,
+    "nome": "Lenovo Ideapad 3",
+    "preco": 3599.99,
+    "url_imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc60nVXEXhhJegM33Zm-donwQHwQhUtp6PbCKz0iH9rP_GqFQJjYlXkSGa2r7YGc-tf0U&usqp=CAU"
+  },
+  {
+    "id": 3,
+    "nome": "Avell Storm X",
+    "preco": 5599.99,
+    "url_imagem": "https://eshop-api.avell.com.br/storage/5/content/64ad5a14252a37126/64b02fbfe2ff5.png"
+  }
+]

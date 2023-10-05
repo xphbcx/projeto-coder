@@ -16,11 +16,11 @@ function Item(props) {
                     <Text>Acer Nitro 5 15" 512 GB </Text>
                     <Text>Preço: R$ 4.000,00</Text>
                 </div>
-                <Contador stock={stock}/>
+                <Contador stock={5}/>
             </div>
         </div>
 
-    )
+    ) 
 }
 
 export default Item
