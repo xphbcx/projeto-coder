@@ -48,7 +48,7 @@ export default function ItemList() {
                         </div>
                         <div style={{ marginLeft: 5 }}>
                             <p>{item.nome}</p>
-                            <p>Preço: R$ {item.preco.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</p>
+                            {/* <p>Preço: R$ {item.preco.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</p> */}
                         </div>
                         <div style={{ display: 'flex', justifyContent: 'center', marginTop: 15, marginBottom: 15 }}>
                             <button onClick={() => ProductDetails(item)}>Detalhes do Produto</button>
