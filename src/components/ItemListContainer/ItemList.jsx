@@ -56,15 +56,16 @@ export default function ItemList() {
                     </div>
                 ))}
                 {showDetail && (
-                    <div style={{ backgroundColor: "#60a5a2", width: 240, borderRadius: 5 }}>
-                        
-                        <div style={{ marginLeft: 5 }}>
+                    <div style={{ backgroundColor: "#60a5a2", opacity:0.8, width: '100%', height:'100%', borderRadius: 5, position:'fixed', top:0, left:0, display:'flex', justifyContent:'center', alignItems:'center' }}>
+                        <div style={{backgroundColor:"white", width:'50%', height:'50%', display:"flex", flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
+                        <div style={{ marginLeft: 5, color:'black' }}>
                             <p>{selectedItem.nome}</p>
                             <p>Preço: R$ {selectedItem.preco.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</p>
                         </div>
                         <div style={{ display: 'flex', justifyContent: 'center', marginTop: 15, marginBottom: 15, flexDirection:'column' }}>
                             <Contador/>
                             <Button style={{width:'35%'}} onClick={hideDetail}>Fechar</Button>
+                        </div>
                         </div>
                     </div>
                 )}
